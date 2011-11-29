@@ -19,12 +19,14 @@ end
 # Gems used for development
 group :development do 
   gem 'rspec-rails'
+  gem 'annotate'
 end
 
 # Gems used for testing
 group :test do
   gem 'rspec'
   gem 'webrat'
+  gem 'annotate'
 end
 
 gem 'jquery-rails'
