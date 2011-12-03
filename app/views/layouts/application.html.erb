@@ -11,7 +11,10 @@
 			<section class="round">	
 				<%= yield %>
 			</section>
-		</div>
+		
 			<%= render 'layouts/footer' %>
+
+			<%= debug (params) if Rails.env.development? %>
+		</div>
 	</body>
 </html>
