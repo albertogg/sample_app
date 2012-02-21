@@ -17,6 +17,8 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       @title = "Sing up"
+      @user.password.clear
+      @user.password_confirmation.clear
       render :action => 'new'
     end
     
